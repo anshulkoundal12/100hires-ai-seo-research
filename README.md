@@ -19,7 +19,9 @@ Active experimentation with AI tools such as ChatGPT, Claude, Gemini, or custom 
 Strong reputation within the SEO community through agencies, SaaS companies, or independent consulting.
 Content focused on practical implementation rather than theory
 
-## Repository Structure
-- `/research/sources.md`: Annotated list of all 10 experts.
-- `/research/linkedin-posts/`: Scraped high-performing post data categorized by author.
-- `/research/youtube-transcripts/`: API-extracted transcripts from core strategy videos.
+## Repository Architecture
+- `/research/sources.md` - Complete annotated directory of all 10 experts with baseline rationale links.
+- `/research/youtube-transcripts/` - Dedicated transcripts extracted programmatically using the Supadata REST API.
+- `/research/linkedin-posts/` - High-performing tactical case studies organized by expert.
+- `fetch_supadata.py` - Custom Python automation engine utilizing HTTP client requests to fetch structured transcript objects.
+- `build_linkedin_docs.py` - Script-driven workspace orchestrator used to uniformly distribute file formats.
